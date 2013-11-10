@@ -6,4 +6,4 @@ Made for those who have paranoia. This package adds anonym.to support to your Bu
 Installation
 ------------
 Install the latest build directly:
-https://github.com/Zwirbelbart/anonym.to-for-WBB4/raw/master/build/anon.tar
+https://github.com/Zwirbelbart/wbb4-anonym.to/raw/master/build/anon.tar
