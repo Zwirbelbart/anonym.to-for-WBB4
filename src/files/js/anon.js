@@ -53,6 +53,12 @@ function a_to_fa() {
 	return a_to_vf;
 }
 
-$( document ).ready(function() {
-	auto_anonymize();
+document.addEventListener('DOMContentLoaded', function() { 
+	$(document).ready(function() {
+		auto_anonymize();
+	});
+
+	$('html').bind('DOMSubtreeModified', function() {
+	    auto_anonymize();
+	});
 });

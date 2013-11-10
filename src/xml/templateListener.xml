@@ -6,7 +6,7 @@
 		<templatelistener name="anonymize.to">
 			<environment>user</environment>
 			<templatename>footer</templatename>
-			<eventname>copyright</eventname>
+			<eventname>footer</eventname>
 			<templatecode><![CDATA[{include file='anon'}]]></templatecode>
 		</templatelistener>
 	</import>
