@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="com.zwirbelbart.anonym" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Anonym.to]]></packagename>
+		<packagedescription><![CDATA[for those who have paranoia]]></packagedescription>
+		<isapplication>0</isapplication>
+		<isunique>1</isunique>
+		<version>1.0.0</version>
+		<date>2013-11-10</date>
+	</packageinformation>
+
+	<authorinformation>
+		<author><![CDATA[Zwirbelbart]]></author>
+		<authorurl><![CDATA[http://github.com/Zwirbelbart]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="templateListener">xml/templateListener.xml</instruction>
+	</instructions>
+</package>

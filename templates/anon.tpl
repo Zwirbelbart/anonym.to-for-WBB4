@@ -1,0 +1,1 @@
+<script src="{@$__wcf->getPath('wcf')}js/anon.js"></script>
