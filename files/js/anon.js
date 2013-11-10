@@ -4,10 +4,6 @@ var a_to_vb = 0;
 var a_to_vc = "";
 function auto_anonymize()
 {
-	auto_anonyminize();
-}
-function auto_anonyminize()
-{
 	var a_to_vd = window.location.hostname;
 	if(protected_links != "" && !protected_links.match(a_to_vd))
 	{
