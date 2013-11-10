@@ -2,10 +2,10 @@
 <package name="com.zwirbelbart.anonym" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 	<packageinformation>
 		<packagename><![CDATA[Anonym.to]]></packagename>
-		<packagedescription><![CDATA[for those who have paranoia]]></packagedescription>
+		<packagedescription><![CDATA[For those who have paranoia.]]></packagedescription>
 		<isapplication>0</isapplication>
 		<isunique>1</isunique>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 		<date>2013-11-10</date>
 	</packageinformation>
 
