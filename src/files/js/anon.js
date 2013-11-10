@@ -57,8 +57,4 @@ document.addEventListener('DOMContentLoaded', function() {
 	$(document).ready(function() {
 		auto_anonymize();
 	});
-
-	$('html').bind('DOMSubtreeModified', function() {
-	    auto_anonymize();
-	});
 });
