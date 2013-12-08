@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="com.zwirbelbart.anonym" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+<package name="com.zwirbelbart.linkAnonymizer" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 	<packageinformation>
-		<packagename><![CDATA[Anonym.to]]></packagename>
+		<packagename><![CDATA[Anonymizer]]></packagename>
 		<packagedescription><![CDATA[For those who have paranoia.]]></packagedescription>
 		<isapplication>0</isapplication>
 		<isunique>1</isunique>
-		<version>1.0.4</version>
-		<date>2013-11-10</date>
+		<version>1.1.0</version>
+		<date>2013-11-16</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -19,8 +19,10 @@
 	</requiredpackages>
 
 	<instructions type="install">
+		<instruction type="language">language/*.xml</instruction>
 		<instruction type="file">files.tar</instruction>
 		<instruction type="template">templates.tar</instruction>
 		<instruction type="templateListener">xml/templateListener.xml</instruction>
+		<instruction type="option">xml/option.xml</instruction>
 	</instructions>
 </package>

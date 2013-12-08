@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd"
+	languagename="Deutsch" countrycode="de" languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.linkAnonymizer"><![CDATA[Anonymisierer]]></item>
+		<item name="wcf.acp.option.category.linkAnonymizer.general"><![CDATA[Allgemein]]></item>
+		<item name="wcf.acp.option.linkanonymizer_enabled"><![CDATA[Anonymisierer aktivieren]]></item>
+		<item name="wcf.acp.option.linkanonymizer_service"><![CDATA[Dienst]]></item>
+	</category>
+	<category name="linkAnonymizer.service">
+		<item name="linkAnonymizer.service.anonymto"><![CDATA[anonym.to]]></item>
+		<item name="linkAnonymizer.service.dontknowme"><![CDATA[dontknowme.at]]></item>
+	</category>
+</language>

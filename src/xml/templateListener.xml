@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/templatelistener.xsd">
 	<import>
 		<!-- user -->
-		<templatelistener name="anonymize.to">
+		<templatelistener name="linkAnonymizer">
 			<environment>user</environment>
 			<templatename>footer</templatename>
 			<eventname>footer</eventname>
-			<templatecode><![CDATA[{include file='anon'}]]></templatecode>
+			<templatecode><![CDATA[{include file='linkAnonymizer'}]]></templatecode>
 		</templatelistener>
 	</import>
 </data>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/options.xsd">
+	<import>
+		<categories>
+			<category name="linkAnonymizer"></category>
+
+			<category name="linkAnonymizer.general">
+				<parent>linkAnonymizer</parent>
+			</category>
+		</categories>
+
+		<options>
+			<option name="linkanonymizer_enabled">
+				<categoryname>linkAnonymizer.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="linkanonymizer_service">
+				<categoryname>linkAnonymizer.general</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<selectoptions><![CDATA[0:linkAnonymizer.service.anonymto
+1:linkAnonymizer.service.dontknowme]]></selectoptions>
+			</option>
+		</options>
+	</import>
+</data>
