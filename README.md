@@ -1,9 +1,9 @@
-anonym.to for WBB4
+Link anonymizer for WBB4
 ==================
 
-Made for those who have paranoia. This package adds anonym.to support to your Burning Board 4.
+Made for those who have paranoia. This package adds support for link anonymizer services such as anonym.to to your Burning Board 4.
 
 Installation
 ------------
 Install the latest build directly:
-https://github.com/Zwirbelbart/wbb4-anonym.to/raw/master/build/anon.tar
+https://github.com/Zwirbelbart/wbb4-linkAnonymizer/blob/master/build/package.tar
