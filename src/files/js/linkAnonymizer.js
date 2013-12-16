@@ -4,7 +4,7 @@ var urlPrefix = serviceUrls[linkAnonymizerService];
 var regExp = new RegExp("//" + location.host + "($|/)");
 
 function anonymizeLink(elem) {
-	$(elem).attr('href', urlPrefix + $(elem).attr('href'));
+	$(elem).attr('href', urlPrefix + encodeURIComponent($(elem).attr('href')));
 	$(elem).attr('data-anonymized', true);
 }
 
