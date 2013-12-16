@@ -6,4 +6,4 @@ Made for those who have paranoia. This package adds support for link anonymizer 
 Installation
 ------------
 Install the latest build directly:
-https://github.com/Zwirbelbart/wbb4-linkAnonymizer/blob/master/build/package.tar
+https://github.com/Zwirbelbart/wbb4-linkAnonymizer/raw/master/build/package.tar
