@@ -33,6 +33,11 @@ function isExternalAddress(link) {
 }
 
 document.addEventListener('DOMContentLoaded', function() { 
+	if(typeof urlPrefix == 'undefined') {
+		console.log('linkAnonymizer: Unable to determine anonymizer service');
+		return;
+	}
+
 	$(document).ready(function() {
 		process();
 	});
