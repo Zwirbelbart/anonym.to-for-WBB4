@@ -1,5 +1,5 @@
-var whitelistedLinks = new Array('#');
-var serviceUrls = new Array('http://anonym.to/?', 'http://dontknow.me/at/?');
+var whitelistedLinks = ['#'];
+var serviceUrls = ['http://anonym.to/?', 'http://dontknow.me/at/?'];
 var urlPrefix = serviceUrls[linkAnonymizerService];
 var regExp = new RegExp("//" + location.host + "($|/)");
 
