@@ -11,5 +11,6 @@
 	<category name="linkAnonymizer.service">
 		<item name="linkAnonymizer.service.anonymto"><![CDATA[anonym.to]]></item>
 		<item name="linkAnonymizer.service.dontknowme"><![CDATA[dontknowme.at]]></item>
+		<item name="linkAnonymizer.service.hidemyass"><![CDATA[HideMyAss]]></item>
 	</category>
 </language>
