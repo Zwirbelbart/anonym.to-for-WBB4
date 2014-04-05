@@ -11,7 +11,7 @@ function anonymizeLink(elem) {
 function process() {
 	//get all links that are external bot not marked with externalURL
 	//this selector also ignores links within the message editor.
-	$('*:not(.cke_wysiwyg_div) > a:not([externalURL])').each(function() {
+	$('*:not(.cke_wysiwyg_div) > a').each(function() {
 		var link = $(this).attr('href');
 
 		if(isExternalAddress(link))
