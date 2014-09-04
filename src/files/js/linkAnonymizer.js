@@ -24,22 +24,27 @@ var regExp = new RegExp("//" + location.host + "($|/)");
 
 function anonymizeLink(elem) {
 	$(elem).attr('href', service.anonymize($(elem).attr('href')));
-	$(elem).attr('data-anonymized', true);
+	$(elem).attr('data-anonymized', 'true');
 }
 
 function process() {
-	//get all links that are external, ignoring those within the message editor
-	$('*:not(.cke_wysiwyg_div) > a').each(function() {  //<--seperaten commit machen, welcher den invaliden selektor fixt
+	//get all links that are not checked (so far), ignoring those within the message editor
+	$('*:not(.cke_wysiwyg_div) > a:not([data-external-link])').each(function() {
 		var link = $(this).attr('href');
+		var anonymized = $(this).attr('data-anonymized');
 
-		if(isExternalAddress(link))
-			$(this).attr('data-external-link', true);
+		//check if this link is a) really external and b) not anonymized (not having data-anonymized set to 'true')
+		if(isExternalAddress(link) && (typeof anonymized == 'undefined' || anonymized != 'true'))
+			$(this).attr('data-external-link', 'true');
 
 	});
 
-	//anonymize ALL external links now
-	$('a[data-external-link]:not([data-anonymized])').each(function() {
-		anonymizeLink(this);
+	//now anonymize all links that were marked being external that were not anonymized yet
+	$('a[data-external-link]').each(function() {
+		var anonymized = $(this).attr('data-anonymized');
+
+		if(typeof anonymized == 'undefined' || anonymized != 'true')
+			anonymizeLink(this);
 	});
 }
 
