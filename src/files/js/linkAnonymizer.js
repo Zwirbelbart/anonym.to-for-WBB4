@@ -29,14 +29,16 @@ function anonymizeLink(elem) {
 
 function process() {
 	//get all links that are not checked (so far), ignoring those within the message editor
-	$('*:not(.cke_wysiwyg_div) > a:not([data-external-link])').each(function() {
-		var link = $(this).attr('href');
-		var anonymized = $(this).attr('data-anonymized');
+	$('a:not([data-external-link])').each(function() {
+		var c = $(this);
+		if($('.redactor-box').has(c).length < 1) {
+			var link = c.attr('href');
+			var anonymized = c.attr('data-anonymized');
 
-		//check if this link is a) really external and b) not anonymized (not having data-anonymized set to 'true')
-		if(isExternalAddress(link) && (typeof anonymized == 'undefined' || anonymized != 'true'))
-			$(this).attr('data-external-link', 'true');
-
+			//check if this link is a) really external and b) not anonymized (not having data-anonymized set to 'true')
+			if(isExternalAddress(link) && (typeof anonymized == 'undefined' || anonymized != 'true'))
+				c.attr('data-external-link', 'true');
+		}
 	});
 
 	//now anonymize all links that were marked being external that were not anonymized yet
@@ -63,6 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	service = services[linkAnonymizerService];
 
+	if(typeof service == 'undefined') {
+		console.error('linkAnonymizer: Service not defined, aborting');
+		return;
+	}
+
 	$(document).ready(function() {
 		process();
 	});
@@ -74,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //credits: http://www.nczonline.net/blog/2007/11/30/the-throttle-function/
 function throttle(method, delay) {
-    clearTimeout(method._tId);
-    method._tId= setTimeout(function(){
-        method();
-    }, delay);
+	clearTimeout(method._tId);
+	method._tId= setTimeout(function(){
+		method();
+	}, delay);
 }
