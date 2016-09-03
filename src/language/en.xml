@@ -5,6 +5,7 @@
 		<item name="wcf.acp.option.category.linkAnonymizer.general"><![CDATA[General]]></item>
 		<item name="wcf.acp.option.linkanonymizer_enabled"><![CDATA[Enable Anonymizer]]></item>
 		<item name="wcf.acp.option.linkanonymizer_service"><![CDATA[Service]]></item>
+		<item name="wcf.acp.option.linkanonymizer_useminified"><![CDATA[Use minified script]]></item>
 	</category>
 	<category name="linkAnonymizer.service">
 		<item name="linkAnonymizer.service.anonymto"><![CDATA[anonym.to]]></item>

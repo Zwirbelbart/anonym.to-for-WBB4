@@ -24,6 +24,11 @@
 1:linkAnonymizer.service.dontknowme
 2:linkAnonymizer.service.hidemyass]]></selectoptions>
 			</option>
+			<option name="linkanonymizer_useminified">
+				<categoryname>linkAnonymizer.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
 		</options>
 	</import>
 </data>
